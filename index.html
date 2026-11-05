@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Интерактивные исторические доски</title>
+<title>История Учебные Проекты</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -14,6 +14,7 @@
     --accent-blue: #3b82f6;
     --accent-gold: #f59e0b;
     --accent-red: #ef4444;
+    --accent-purple: #a78bfa;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
@@ -31,7 +32,7 @@
 
   main {
     flex: 1;
-    max-width: 1100px;
+    max-width: 1180px;
     width: 100%;
     margin: 0 auto;
     padding: 60px 20px;
@@ -43,8 +44,8 @@
 
   .boards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
   }
 
   .board-card {
@@ -58,6 +59,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
   }
   .board-card:hover {
     transform: translateY(-6px);
@@ -84,6 +86,9 @@
   .card-banner.decembrists { 
     background-image: linear-gradient(to top, rgba(15,23,42,0.95), rgba(15,23,42,0.3)), url('images/backgrounds/decembrists_bg.jpg');
   }
+  .card-banner.itmo-quiz { 
+    background-image: radial-gradient(circle at top right, rgba(139, 92, 246, 0.55), rgba(59, 130, 246, 0.25), rgba(15, 23, 42, 0.98)), url('images/backgrounds/itmo_bg.jpg');
+  }
 
   .card-badge {
     background: rgba(0, 0, 0, 0.6);
@@ -106,6 +111,7 @@
   }
   .board-card.nevsky .card-link-text { color: var(--accent-gold); }
   .board-card.decembrists .card-link-text { color: var(--accent-red); }
+  .board-card.itmo-quiz .card-link-text { color: var(--accent-purple); }
 
   footer {
     text-align: center; padding: 24px; color: var(--text-muted);
@@ -116,12 +122,12 @@
 <body>
 
   <header>
-    <div class="logo">📜 <span>История</span> России • Интерактивные доски</div>
+    <div class="logo">📜 <span>История</span> России • Учебные проекты</div>
   </header>
 
   <main>
-    <h1>Выберите доску для просмотра</h1>
-    <p class="subtitle">Нажмите на карточку, чтобы открыть детальную интерактивную доску по нужной теме.</p>
+    <h1>Выберите доску или квиз для просмотра</h1>
+    <p class="subtitle">Нажмите на карточку, чтобы открыть детальную интерактивную доску или пройти квиз по нужной теме.</p>
     
     <div class="boards-grid">
       
@@ -163,6 +169,20 @@
           <div class="card-link-text">Открыть доску Декабристов →</div>
         </div>
       </a>
+
+      <a href="boards/itmo-quiz.html" class="board-card itmo-quiz">
+        <div class="card-banner itmo-quiz">
+          <span class="card-badge">5 вопросов • Квиз</span>
+        </div>
+        <div class="card-content">
+          <div>
+            <h2 class="card-title">Квиз: История и учёные ИТМО</h2>
+            <p class="card-desc">3 вопроса о выдающихся учёных Университета ИТМО и 2 вопроса по иллюстрациям из лекции с подробными пояснениями.</p>
+          </div>
+          <div class="card-link-text">Открыть квиз ИТМО →</div>
+        </div>
+      </a>
+
     </div>
   </main>
 
