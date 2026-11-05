@@ -9,7 +9,35 @@
         background-color: #e8e4dc;
         color: #2b2622;
         margin: 0;
-        padding: 40px 20px;
+        padding: 30px 20px 40px;
+    }
+
+    .top-nav {
+        width: 1050px;
+        margin: 0 auto 16px auto;
+    }
+
+    .back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background-color: #fdfbf6;
+        color: #1a1614;
+        text-decoration: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+        border: 1px solid #cf9527;
+        font-family: 'Georgia', serif;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        transition: all 0.2s ease;
+    }
+
+    .back-btn:hover {
+        background-color: #cf9527;
+        color: #ffffff;
+        transform: translateY(-1px);
     }
     
     .container {
@@ -78,6 +106,10 @@
 </style>
 </head>
 <body>
+
+<div class="top-nav">
+    <a href="../index.html" class="back-btn">← Назад к сайту</a>
+</div>
 
 <div class="container">
     

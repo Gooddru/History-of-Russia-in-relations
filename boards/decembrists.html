@@ -65,6 +65,10 @@
     pointer-events: auto;
     position: relative;
     z-index: 20;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
   }
 
   .btn:hover {
@@ -76,6 +80,19 @@
     background: #1e293b;
     color: #ffffff;
     border-color: #1e293b;
+  }
+
+  .btn-back {
+    background: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+    margin-right: 6px;
+  }
+
+  .btn-back:hover {
+    background: #1e293b;
+    border-color: #334155;
+    color: #ffffff;
   }
 
   .btn-cluster-1 { border-left: 4px solid var(--blue-border); }
@@ -413,6 +430,7 @@
 
 <div class="toolbar">
   <div class="nav-group">
+    <a href="../index.html" class="btn btn-back">← Назад к сайту</a>
     <button class="btn active" id="tab-board" onclick="switchView('board')">Интерактивная доска (Блок-схема)</button>
     <button class="btn" id="tab-grid" onclick="switchView('grid')">Карточки сеткой</button>
     <button class="btn" id="tab-table" onclick="switchView('table')">Сводная таблица</button>
@@ -512,7 +530,6 @@
 </div>
 
 <script>
-
 function getFallbackPhoto(title) {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200"><rect width="400" height="200" fill="#1e293b"/><circle cx="200" cy="75" r="32" fill="#334155"/><path d="M140 160 C140 120, 260 120, 260 160 Z" fill="#334155"/><text x="200" y="180" text-anchor="middle" fill="#94a3b8" font-size="13" font-family="sans-serif">${title}</text></svg>`;
   return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
