@@ -39,6 +39,10 @@
 └── assets/
     └── images/
         ├── backgrounds/
+        │   ├── decembrists_bg.jpg
+        │   ├── itmo_bg.png
+        │   ├── nevsky_bg.jpg
+        │   └── romanovs_bg.webp
         ├── boards/
         │   ├── nevsky/
         │   └── romanovs/
