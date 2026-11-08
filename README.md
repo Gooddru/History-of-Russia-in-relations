@@ -15,13 +15,13 @@
 
 ### Исторические доски
 
-- [Романовы в XVIII веке](pages/romanovs.html) — династические связи, внешняя политика монархов и Устав о наследовании престола 1722 года.
-- [Александр Невский](pages/nevsky.html) — инфографика XIII века, сравнение западного и восточного направлений политики, ключевые даты и сражения.
-- [Общественные движения XIX века](pages/decembrists.html) — развитие общественных организаций от декабристов до народников, их программы и сравнительная таблица.
+- [Романовы в XVIII веке](pages/romanov-dynasty.html) — династические связи, внешняя политика монархов и Устав о наследовании престола 1722 года.
+- [Александр Невский](pages/alexander-nevsky.html) — инфографика XIII века, сравнение западного и восточного направлений политики, ключевые даты и сражения.
+- [Общественные движения XIX века](pages/decembrist-movement.html) — развитие общественных организаций от декабристов до народников, их программы и сравнительная таблица.
 
 ### Проверочный квиз
 
-[Квиз об истории и учёных ИТМО](pages/itmo.html) содержит 5 вопросов, автоматическую проверку ответов, подсчёт баллов и исторические пояснения.
+[Квиз об истории и учёных ИТМО](pages/itmo-quiz.html) содержит 5 вопросов, автоматическую проверку ответов, подсчёт баллов и исторические пояснения.
 
 ## Структура файлов
 
@@ -30,20 +30,20 @@
 ├── index.html
 ├── README.md
 ├── pages/
-│   ├── decembrists.html
-│   ├── itmo.html
-│   ├── nevsky.html
-│   └── romanovs.html
+│   ├── alexander-nevsky.html
+│   ├── decembrist-movement.html
+│   ├── itmo-quiz.html
+│   └── romanov-dynasty.html
 └── assets/
     └── images/
         ├── backgrounds/
-        │   ├── decembrists_bg.jpg
-        │   ├── itmo_bg.png
-        │   ├── nevsky_bg.jpg
-        │   └── romanovs_bg.webp
-        ├── itmo/
-        ├── nevsky/
-        └── romanovs/
+        │   ├── alexander-nevsky-bg.jpg
+        │   ├── decembrist-movement-bg.jpg
+        │   ├── itmo-quiz-bg.png
+        │   └── romanov-dynasty-bg.webp
+        ├── alexander-nevsky/
+        ├── quizzes/
+        └── romanov-dynasty/
 ```
 
 ## Запуск
