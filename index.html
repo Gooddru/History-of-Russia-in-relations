@@ -89,7 +89,11 @@
   .card-banner.itmo-quiz { 
     background-image: linear-gradient(to top, rgba(15,23,42,0.95), rgba(15,23,42,0.25)), url('assets/images/backgrounds/itmo-quiz-bg.png');
   }
-
+  .card-banner.emigration {
+    background-color: #0f2922;
+    background-image: linear-gradient(to top, rgba(15,23,42,0.95), rgba(13,110,82,0.45)), url('assets/images/backgrounds/russian-emigration-bg.jpg');
+  }
+  .board-card.emigration .card-link-text { color: #10b981; }
   .card-badge {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(6px);
@@ -182,12 +186,23 @@
           <div class="card-link-text">Открыть квиз ИТМО →</div>
         </div>
       </a>
-
+      <a href="pages/russian-emigration.html" class="board-card emigration">
+        <div class="card-banner emigration">
+          <span class="card-badge">1917 — 1939 гг. • Презентация</span>
+        </div>
+        <div class="card-content">
+          <div>
+            <h2 class="card-title">Русская эмиграция первой волны</h2>
+            <p class="card-desc">Биографии, судьбы в изгнании и страны захоронения И. Бунина, И. Сикорского, А. Павловой и А. Билимовича.</p>
+          </div>
+          <div class="card-link-text">Открыть презентацию →</div>
+        </div>
+      </a>
     </div>
   </main>
 
   <footer>
-    Интерактивные исторические доски • Образовательный проект
+   
   </footer>
 
 </body>
